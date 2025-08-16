@@ -1,0 +1,38 @@
+$(document).ready(function(){
+    $('#signup-form').validate({
+        rules:{
+            fname:{
+                required:true,
+                minlength:4,
+            },
+            lname:{
+                required:true,
+                minlength:2,
+            },
+            mobile:{
+                required:true,
+            },
+            password:{
+                required:true,
+                minlength:8,
+            },
+            day:{
+                required:true,
+            },
+            month:{
+                required:true,
+            },
+            year:{
+                required:true,
+            },
+            Gender:{
+                required:true,
+            }
+        },
+        messages:{
+            fname:{
+                required:"peru ena unagaappana enter pannuvan"
+            }
+        }
+    })
+})
